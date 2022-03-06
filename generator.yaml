@@ -1,0 +1,26 @@
+ignore:
+  operations: []
+  field_paths: []
+  resource_names: []
+
+operations:
+  CreateVpcEndpoint:
+    output_wrapper_field_path: VpcEndpoint
+  DeleteVpcEndpoints:
+    operation_type:
+      - Delete
+    resource_name: VpcEndpoint
+
+resources:
+  Firewall:
+    fields:
+      FirewallName: 
+        is_primary_key: true
+  FirewallPolicy:
+    fields:
+      FirewallPolicyName:
+        is_primary_key: true
+  RuleGroup:
+    fields:
+      RuleGroupName:
+        is_primary_key: true
